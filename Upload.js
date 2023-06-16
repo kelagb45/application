@@ -1,79 +1,88 @@
 //Select the database to use.
-use('ReactFrontendProject');
+use('ReactBackendProject');
 
 // Insert a few documents into the PortfolioData collection.
 db.getCollection('projects').insertMany(
     [
         {
-          
-            image: 'https://cdn.dribbble.com/userupload/7518943/file/original-b39a16475b25ac10559e04034bd8b9b7.png?compress=1&resize=1504x1128',
-            title: 'Online Crypto Casino',
-            github: 'https://github.com',
-            demo: 'https://dribbble.com/shots/21632973-Online-Crypto-Casino-Mobile-Designs',
-        },
-        {
-       
-            image: 'https://cdn.dribbble.com/userupload/7531024/file/original-28960363b0b1e5a03c2f6f1f077c298e.jpg?compress=1&resize=1504x1128',
-            title: 'Education App UIX',
-            github: 'https://github.com',
-            demo: 'https://dribbble.com/shots/21637001-Education-App-UIX',
-        },
-        {
-            image: 'https://cdn.dribbble.com/userupload/7474794/file/original-ec5e3ff0615f4ec018a8662d76206bde.jpg?compress=1&resize=1504x1126',
-            title: 'Recipe app design',
-            github: 'https://github.com',
-            demo: 'https://dribbble.com/shots/21617723-Recipe-app-design',
-        },
-        {
+            id: 1,
+            image: IMG1,
+            title:'Digital clothing',
+            github: 'https://github.com/kelagb45/kelli/tree/master/portfolio',
+            demo:'https://dribbble.com/tags/webdesign'
         
-            image: 'https://cdn.dribbble.com/userupload/7527073/file/original-a56488a4a04a23bfbeb97cafc030dde5.png?compress=1&resize=1504x1128',
-            title: 'OnStep - Shoes Store',
-            github: 'https://github.com',
-            demo: 'https://dribbble.com/shots/21635811-OnStep-Shoes-Store',
-        },
-        {
-     
-            image: 'https://cdn.dribbble.com/users/5147614/screenshots/17480773/media/77bbee6dafd811f65d14bd38f4c426ab.png?compress=1&resize=1200x900&vertical=top',
-            title: 'Mobile App Exploration',
-            github: 'https://github.com',
-            demo: 'https://dribbble.com/shots/17480773-NWS-Mobile-App-Exploration',
-        },
-        {
-       
-            image: 'https://cdn.dribbble.com/userupload/7528445/file/original-4b13d4c68619e9e932565427083bb19d.jpg?compress=1&resize=1504x1126',
-            title: 'Recipe app',
-            github: 'https://github.com',
-            demo: 'https://dribbble.com/shots/21636337-Recipe-app',
-        }
-
-    ]
+          },
+        
+           {
+            id: 2,
+            image: IMG2,
+            title:'future savings',
+            github: 'https://github.com/kelagb45/kelli/tree/master/portfolio',
+            demo:"https://dribbble.com/tags/webdesign"
+        
+          } ,
+          {
+            id: 3,
+            image: IMG3,
+            title:'Design system',
+            github: 'https://github.com/kelagb45/kelli/tree/master/portfolio',
+            demo:"https://dribbble.com/tags/webdesign"
+        
+          },
+           {
+            id: 4,
+            image: IMG4,
+            title:'look beyond limits',
+            github: 'https://github.com/kelagb45/kelli/tree/master/portfolio',
+            demo:"https://dribbble.com/tags/webdesign"
+        
+          } ,
+          {
+            id: 1,
+            image: IMG5,
+            title:'Digital art guide',
+            github: 'https://github.com/kelagb45/kelli/tree/master/portfolio',
+            demo: "https://dribbble.com/tags/webdesign"
+        
+          },
+           
+          {
+            id: 1,
+            image: IMG6,
+            title:'perfomance pltform',
+            github: 'https://github.com/kelagb45/kelli/tree/master/portfolio',
+            demo:"https://dribbble.com/tags/webdesign"
+        
+          },
+]
 );
 
 // Insert a few documents into the PortfolioData collection.
 // db.getCollection('testimonials').insertMany(
-//  [
-//         {
-//           avatar: 'https://cdn.fstoppers.com/styles/large-16-9/s3/lead/2019/01/tips-for-professional-portraits.jpg',
-//           name: 'James Brown',
-//           review: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus velit omnis deserunt corrupti perferendis quisquam officia cupiditate ut impedit magnam iusto numquam odio eos, itaque, explicabo ipsum esse dolorem unde!"
-//         },
-        
-//         {
-//           avatar: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3rvvFzP2v-40awpf_uw6dq1UVh8R3jkGM2rrrqIbd6Ih3_d_fCEW8Fn0sl5OsJ1qaLuo&usqp=CAU',
-//           name: 'Tina Snow ',
-//           review: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus velit omnis deserunt corrupti perferendis quisquam officia cupiditate ut impedit magnam iusto numquam odio eos, itaque, explicabo ipsum esse dolorem unde!"
-//         },
-//         {
-//           avatar: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJpfFkpLYgdR4R0-ZomZ0ixnZVgLQUOnZnWQ&usqp=CAU',
-//           name: 'Kevin Roussel',
-//           review: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus velit omnis deserunt corrupti perferendis quisquam officia cupiditate ut impedit magnam iusto numquam odio eos, itaque, explicabo ipsum esse dolorem unde!"
-//         },
-//         {
-//           avatar: 'https://images.squarespace-cdn.com/content/v1/530ce8d1e4b067ea68a9f821/1612484390216-5NVBC0NJJTFP1OPNRU6F/corporate%2Bbusiness%2Bheadshots%2Blos%2Bangeles_Danielle%2BSpires.jpg',
-//           name: 'Louisa McBrown',
-//           review: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus velit omnis deserunt corrupti perferendis quisquam officia cupiditate ut impedit magnam iusto numquam odio eos, itaque, explicabo ipsum esse dolorem unde!"
-//         },
-      
+//  [{
+   // avatar: AVTR1,
+   // name: "Ekema Ashley",
+   // review:
+    //  "I was so happy with the photos that kelly took of my wedding. she captured the day perfectly and I will cherish him forever.",
+ // },
+ // {
+  //  avatar: AVTR2,
+   // name: "Brenda",
+  //  review:
+   //   "kelly is a true artist. He has a great eye for composition and lighting, and she knows how to capture the beauty in every moment.",
+ // },
+  //{
+   // avatar: AVTR3,
+    //name: "Malando Tina",
+   // review:
+   //   "I was very happy with the work that kelly did on my website. she was able to take my vision and turn it into a reality. The website is exactly what I wanted and it looks great. I would definitely recommend HarryShots to anyone who is looking for a web developer.",
+ // },
+ // {
+   // avatar: AVTR4,
+  //  name: "Makoun Glory",
+  //  review:
+   //   "kelly was very easy to work with. He was always responsive to my feedback and she was always willing to make changes to the content until I was happy with the results.",
+ // },
       
 //       ]
 // );
