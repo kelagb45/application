@@ -4,3 +4,7 @@ password:6pP9lX6Y0L0FvYMa
 
 
 mongodb+srv://agbornkongho356:6pP9lX6Y0L0FvYMa@reactbackendportfolio.tjp1qhj.mongodb.net/
+
+
+
+mongodb+srv://agbornkongho356:6pP9lX6Y0L0FvYMa@reactbackendportfolio.tjp1qhj.mongodb.net/?retryWrites=true&w=majority
